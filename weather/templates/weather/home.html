@@ -1,0 +1,36 @@
+{% load static %}
+<html>
+<head>
+<title>Welcome to Bhopal</title>
+<link href="{% static 'weather/style.css' %}" rel="stylesheet" type="text/css" /></head>
+<body>
+<div id="top">
+	<h1>Bhopal- The heart of India</h1>
+	
+</div>
+<div id="left">
+	<h5>Faltu</h5>
+</div>
+
+<div id="center">
+	<h5>Geog. Location</h5>
+	{% block cent_content %}
+		{{ longitude }}
+	{% endblock %}
+</div>
+
+<div id="right">
+	<h5>Taapmaan</h5>
+	{% block right_content %}
+		<img src="http://openweathermap.org/img/wn/{{ source }}.png">
+		<p>{{ temp }} - {{ humidity }}</p>
+		
+	{% endblock %}
+
+</div>
+<div id="master">
+	<p>sdfgsd sdfsdfgsdg sdg sd vgsdf g sd fg sdfg asd g sdf yg sd sdf g sdf gvbsdf g sdf g sdf g sdf gsd tg sdv  sd gsd g sdf g sd g sd  vfgvsd g sd g sdg sd vf sdg dfh wer tger y wetyerw tywe twer ty sefgwrt wety wert werty werty wert wertydf g sd g sd  vfgvsd g sd g sdg sd vf sdg dfh wer tger y wetyerw tywe twer ty sefgwrt wety wert werty werty wert wertydf g sd g sd  vfgvsd g sd g sdg sd vf sdg dfh wer tger y wetyerw tywe twer ty sefgwrt wety wert werty werty wert wertydf g sd g sd  vfgvsd g sd g sdg sd vf sdg dfh wer tger y wetyerw tywe twer ty sefgwrt wety wert werty werty wert wertydf g sd g sd  vfgvsd g sd g sdg sd vf sdg dfh wer tger y wetyerw tywe twer ty sefgwrt wety wert werty werty wert wertyt</p>
+	<p>drfgrtwerdf g sd g sd  vfgvsd g sd g sdg sd vf sdg dfh wer tger y wetyerw tywe twer ty sefgwrt wety wert werty werty wert wertydf g sd g sd  vfgvsd g sd g sdg sd vf sdg dfh wer tger y wetyerw tywe twer ty sefgwrt wety wert werty werty wert wertydf g sd g sd  vfgvsd g sd g sdg sd vf sdg dfh wer tger y wetyerw tywe twer ty sefgwrt wety wert werty werty wert wertydf g sd g sd  vfgvsd g sd g sdg sd vf sdg dfh wer tger y wetyerw tywe twer ty sefgwrt wety wert werty werty wert wertydf g sd g sd  vfgvsd g sd g sdg sd vf sdg dfh wer tger y wetyerw tywe twer ty sefgwrt wety wert werty werty wert werty twert wetg wert wetwer</p>
+</div>
+
+<div id="footer">&copy; Bhopal Tourism - 2019</div></body></html>
